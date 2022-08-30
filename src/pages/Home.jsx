@@ -3,30 +3,30 @@ import { Container, Button, Row, Col, Card } from 'react-bootstrap';
 
 function Home() {
     return (
-        <>
+        <Container fluid="xl" >
             <Container fluid className="px-5">
                 <h1>Choose Soap Agency as your digital marketing agency</h1>
             </Container>
             <Button variant="outline-primary" className="mx-5">Get in touch 👋</Button>
-            <Container fluid className="my-5 mx-2">
-                <Row className="justify-content-md-around">
-                    <Col md="auto">
-                        <img src="https://picsum.photos/seed/book/225/400" alt="random image 1" width="225" height="400" className="img-rounded img-top" />
+            <Container fluid className="my-5">
+                <Row className="d-flex justify-content-evenly flex-lg-nowrap">
+                    <Col xs="auto">
+                        <img src="https://picsum.photos/seed/book/225/400" alt="random image 1" width="225" height="400" className="img-rounded img-top img-responsive" />
                     </Col>
-                    <Col md="auto">
-                        <img src="https://picsum.photos/seed/files/225/400" alt="random image 2" width="225" height="400" className="img-rounded img-bottom" />
+                    <Col xs="auto">
+                        <img src="https://picsum.photos/seed/files/225/400" alt="random image 2" width="225" height="400" className="img-rounded img-bottom img-responsive" />
                     </Col>
-                    <Col md="auto">
-                        <img src="https://picsum.photos/seed/pen/225/400" alt="random image 3" width="225" height="400" className="img-rounded img-top" />
+                    <Col xs="auto" className="d-none d-sm-none d-md-block">
+                        <img src="https://picsum.photos/seed/pen/225/400" alt="random image 3" width="225" height="400" className="img-rounded img-top img-responsive" />
                     </Col>
-                    <Col md="auto">
-                        <img src="https://picsum.photos/seed/laptop/225/400" alt="random image 4" width="225" height="400" className="img-rounded img-bottom" />
+                    <Col xs="auto" className="d-none d-sm-none d-md-none d-lg-block">
+                        <img src="https://picsum.photos/seed/laptop/225/400" alt="random image 4" width="225" height="400" className="img-rounded img-bottom img-responsive" />
                     </Col>
                 </Row>
             </Container>
             <Container fluid className="px-5">
                 <h2>We are the best choice for your Digital Marketing</h2>
-                <Container className="mt-5 d-flex flex-wrap justify-content-around align-items-start">
+                <Container className="mt-5 d-flex flex-wrap justify-content-evenly align-items-start gap-3">
                     <Card style={{ width: '16rem' }}>
                         <img src="https://picsum.photos/seed/icon1/30" alt="icon" width="30" height="30" className="img-rounded" />
                         <Card.Title>Earning traffic</Card.Title>
@@ -92,7 +92,7 @@ function Home() {
             <Container fluid className="bg-light" style={{ height: 300 }}>
                 <text>Form to contact us</text>
             </Container>
-        </>
+        </Container>
     );
 }
 export default Home;
