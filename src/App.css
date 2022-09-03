@@ -10,6 +10,15 @@ h4 {
   font-size: 5rem;
   text-align: center;
 }
+h5{
+  font-size: 2rem;
+  font-weight: bold;
+}
+h6{
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+}
 .div-rounded{
   border-radius: 25px;
 }
@@ -24,4 +33,11 @@ h4 {
 }
 .footer-list{
   list-style: none;
+  font-size: 0.8rem;
+  color: rgba(211, 211, 211, 0.678);
+}
+.chart{
+  border-radius: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
