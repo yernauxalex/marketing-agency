@@ -58,7 +58,6 @@ function Home() {
                 </Container>
             </Container>
             <Container className="bg-light px-5 mt-5 div-rounded">
-                {/* Banner with partner */}
                 <Row className="py-3">
                     <Col className="d-flex align-items-center justify-content-center">
                         <h4>Over 700+ partner</h4>
@@ -125,11 +124,50 @@ function Home() {
                     </Card>
                 </Row>
             </Container>
-            <Container fluid className="bg-light px-5 mt-5" style={{ height: 400 }}>
-                <text>STATS with graph</text>
+            <Container fluid className="bg-light px-5 mt-5 div-rounded">
+                <Row className="py-3">
+                    <Col>
+                        <h5>By the numbers</h5>
+                        <h4 style={{ fontSize: 120, fontWeight: 'bold' }}>92%</h4>
+                        <p style={{ fontWeight: 'bold' }}>Retention rate</p>
+                        <p>Your business is in good hands at Soap Agency. While the average retention rate for marketing agencies hovers around 50%,
+                            over 90% of our clients stay with us over the long haul because of the results we deliver and the relationships we build.</p>
+                    </Col>
+                    <Col>
+                        <p>Our best-in-class digital marketing agency impress customers with impactful results and wows them with stellar customer service.</p>
+                        <img src="https://picsum.photos/seed/chart/500/300" alt="graph" width="500" height="300" />
+                        {/* <Row className="p-0 " style={{ height: 200 }}>
+                            <Col className="p-0" style={{ witdh: 80 }}>
+                                <div className="h-64 d-inline-block chart" style={{ width: 80, backgroundColor: '#ff0000' }}>Height 25%</div>
+                            </Col>
+                            <Col className="p-0 w-80" style={{ witdh: 80 }}>
+                                <div className="h-30 d-inline-block chart" style={{ width: 80, backgroundColor: '#ff0000' }}>Height 50%</div>
+                            </Col>
+                            <Col className="p-0 w-80">
+                                <div className="h-75 d-inline-block chart" style={{ width: 80, backgroundColor: '#ff0000' }}>Height 75%</div>
+                            </Col>
+                            <Col className="p-0 w-80">
+                                <div className="h-22 d-inline-block chart" style={{ width: 80, backgroundColor: '#ff0000' }}>Height 100%</div>
+                            </Col>
+                        </Row> */}
+                    </Col>
+                </Row>
             </Container>
-            <Container fluid className="bg-light px-5 mt-5" style={{ height: 300 }}>
-                <text>Form to contact us</text>
+            <Container fluid className="bg-light px-5 my-5 div-rounded">
+                <Row className="py-3">
+                    <Col>
+                        <h5>Ready to grow with a digital marketing agency you can trust ?
+                            Get your proposal now!
+                        </h5>
+                    </Col>
+                    <Col>
+                        <p>Our digital marketing experts have put together thousands of succesful digital marketing campaigns for businesses looking
+                            to increase leads, phone calls, transactions, and qualified website traffic. They will do the same for you, request a free
+                            strategy proposal and get a game plan for elite revenue.
+                        </p>
+                        <Button variant="primary" >Send me a proposal 📄</Button>
+                    </Col>
+                </Row>
             </Container>
         </Container>
     );
