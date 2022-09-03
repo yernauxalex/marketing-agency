@@ -16,48 +16,44 @@ function Footer() {
 
                 <Row fluid className="mt-2 d-flex justify-content-center">
                     <Col>
-                        <ul className="footer-list">Section 1
-                            <li>item 1</li>
-                            <li>item 2</li>
-                            <li>item 3</li>
-                            <li>item 4</li>
-                            <li>item 5</li>
+                        <ul className="pb-1 footer-list"><h6>Digital marketing</h6>
+                            <li>Overview</li>
+                            <li>Paid search</li>
+                            <li>SEO</li>
+                            <li>Email marketing</li>
+                            <li>Analytics & Reporting</li>
                         </ul>
                     </Col>
                     <Col>
-                        <ul className="footer-list">Section 2
-                            <li>item 1</li>
-                            <li>item 2</li>
-                            <li>item 3</li>
-                            <li>item 4</li>
-                            <li>item 5</li>
+                        <ul className="footer-list"><h6>Website development</h6>
+                            <li>Overview</li>
+                            <li>Front end</li>
+                            <li>CMS</li>
+                            <li>Ecommerce website</li>
+                            <li>CRM integration</li>
                         </ul>
                     </Col>
                     <Col>
-                        <ul className="footer-list">Section 3
-                            <li>item 1</li>
-                            <li>item 2</li>
-                            <li>item 3</li>
-                            <li>item 4</li>
-                            <li>item 5</li>
+                        <ul className="footer-list"><h6>Branding</h6>
+                            <li>Overview</li>
+                            <li>Brand guidelines</li>
+                            <li>Brand identity</li>
+                            <li>Brand workshop</li>
+                            <li>Brand strategy</li>
                         </ul>
                     </Col>
                     <Col>
-                        <ul className="footer-list">Section 4
-                            <li>item 1</li>
-                            <li>item 2</li>
-                            <li>item 3</li>
-                            <li>item 4</li>
-                            <li>item 5</li>
+                        <ul className="footer-list"><h6>Socmed marketing</h6>
+                            <li>Overview</li>
+                            <li>Organic social</li>
+                            <li>Paid social</li>
                         </ul>
                     </Col>
                     <Col>
-                        <ul className="footer-list">Section 5
-                            <li>item 1</li>
-                            <li>item 2</li>
-                            <li>item 3</li>
-                            <li>item 4</li>
-                            <li>item 5</li>
+                        <ul className="footer-list"><h6>Creative</h6>
+                            <li>Overview</li>
+                            <li>Web, UI/UX design</li>
+                            <li>Print design</li>
                         </ul>
                     </Col>
                 </Row>
