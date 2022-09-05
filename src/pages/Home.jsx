@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { Container, Button, Row, Col, Card } from 'react-bootstrap';
 
@@ -38,26 +39,24 @@ function Home() {
                     </Card>
                     <Card style={{ width: '16rem' }}>
                         <img src="https://picsum.photos/seed/icon2/30" alt="icon" width="30" height="30" className="img-rounded" />
-                        <Card.Title>Earning traffic</Card.Title>
-                        <Card.Text>A website without traffic is worthless. Our marketers partner with you to identify
-                            your target market and get to work making your site more visible to your key market
-                            through our comprehensive digital marketing services.
+                        <Card.Title>Design that dazzles</Card.Title>
+                        <Card.Text>Your business is unique and you need a website that can help separate you from the competition.
+                            The Soap agency interactive team lays the creative groundwork for your digital presence with a
+                            cutting-edge website design
                         </Card.Text>
                         <Card.Link href="#">Learn more</Card.Link>
                     </Card>
                     <Card style={{ width: '16rem' }}>
                         <img src="https://picsum.photos/seed/icon3/30" alt="icon" width="30" height="30" className="img-rounded" />
-                        <Card.Title>Earning traffic</Card.Title>
-                        <Card.Text>A website without traffic is worthless. Our marketers partner with you to identify
-                            your target market and get to work making your site more visible to your key market
-                            through our comprehensive digital marketing services.
+                        <Card.Title>Expand your social reach</Card.Title>
+                        <Card.Text>Connectivity and online interaction are a must for any company focused on growth. Our team of social
+                            media experts can create a social media management plan that gets the right message in front of your desired audience.
                         </Card.Text>
                         <Card.Link href="#">Learn more</Card.Link>
                     </Card>
-                    {/* maybe card instead of row/col container */}
                 </Container>
             </Container>
-            <Container className="bg-light px-5 mt-5 div-rounded">
+            <Container className="bg-custom px-5 mt-5 div-rounded">
                 <Row className="py-3">
                     <Col className="d-flex align-items-center justify-content-center">
                         <h4>Over 700+ partner</h4>
@@ -87,14 +86,14 @@ function Home() {
                     </Col>
                 </Row>
             </Container>
-            <Container className="bg-light px-5 mt-5 div-rounded">
+            <Container className="bg-custom px-5 mt-5 div-rounded">
                 <Row>
                     <Col className="my-3 d-flex justify-content-center">
                         <img src="https://picsum.photos/seed/meeting/375" alt="illustration image" width="375" height="375" className="img-rounded" />
                     </Col>
                     <Col>
                         <h2>How Soap Agency creates growth business</h2>
-                        <ul>
+                        <ul className='customList'>
                             <li>Dedicated account manager for each account</li>
                             <li>Clear and concise reporting platform</li>
                             <li>Partner status with Google, Facebook, Bing and more</li>
@@ -104,27 +103,25 @@ function Home() {
                     </Col>
                 </Row>
                 <Row className="py-3 d-flex justify-content-evenly">
-                    <Card bg="light" border="light" style={{ width: '28rem' }}>
+                    <Card className="bg-custom" style={{ width: '28rem' }}>
                         <img src="https://picsum.photos/seed/icon3/30" alt="icon" width="30" height="30" className="img-rounded" />
-                        <Card.Title>Earning traffic</Card.Title>
-                        <Card.Text>A website without traffic is worthless. Our marketers partner with you to identify
-                            your target market and get to work making your site more visible to your key market
-                            through our comprehensive digital marketing services.
+                        <Card.Title>Proven performance</Card.Title>
+                        <Card.Text>Our team of over 450 experts is one of the largest performance digital marketing agencies in the workd.
+                            We've partnered with the best to bring the greatest marketing technology to our clients.
                         </Card.Text>
                         <Card.Link href="#">Learn more</Card.Link>
                     </Card>
-                    <Card bg="light" border="light" style={{ width: '28rem' }}>
+                    <Card className="bg-custom" style={{ width: '28rem' }}>
                         <img src="https://picsum.photos/seed/icon3/30" alt="icon" width="30" height="30" className="img-rounded" />
-                        <Card.Title>Earning traffic</Card.Title>
-                        <Card.Text>A website without traffic is worthless. Our marketers partner with you to identify
-                            your target market and get to work making your site more visible to your key market
-                            through our comprehensive digital marketing services.
+                        <Card.Title>Unparalleled track record</Card.Title>
+                        <Card.Text>We have a 92% client retention rate and a client recommendation score that's 60% higher than the worldwide
+                            average. Our 700+ client testimonials, award-winning culture are the perfect recipe for a successful digital compaign.
                         </Card.Text>
                         <Card.Link href="#">Learn more</Card.Link>
                     </Card>
                 </Row>
             </Container>
-            <Container fluid className="bg-light px-5 mt-5 div-rounded">
+            <Container fluid className="bg-custom px-5 mt-5 div-rounded">
                 <Row className="py-3">
                     <Col>
                         <h5>By the numbers</h5>
@@ -153,7 +150,7 @@ function Home() {
                     </Col>
                 </Row>
             </Container>
-            <Container fluid className="bg-light px-5 my-5 div-rounded">
+            <Container fluid className="bg-custom px-5 my-5 div-rounded">
                 <Row className="py-3">
                     <Col>
                         <h5>Ready to grow with a digital marketing agency you can trust ?
