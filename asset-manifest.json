@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/marketing-agency/static/css/main.43fba4d5.css",
+    "main.js": "/marketing-agency/static/js/main.9763c874.js",
+    "static/js/787.28a31909.chunk.js": "/marketing-agency/static/js/787.28a31909.chunk.js",
+    "index.html": "/marketing-agency/index.html",
+    "main.43fba4d5.css.map": "/marketing-agency/static/css/main.43fba4d5.css.map",
+    "main.9763c874.js.map": "/marketing-agency/static/js/main.9763c874.js.map",
+    "787.28a31909.chunk.js.map": "/marketing-agency/static/js/787.28a31909.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43fba4d5.css",
+    "static/js/main.9763c874.js"
+  ]
+}
