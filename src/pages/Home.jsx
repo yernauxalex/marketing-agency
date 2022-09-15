@@ -1,6 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { Container, Button, Row, Col, Card } from 'react-bootstrap';
+import picHome1 from '../assets/picHome1.jpg'
+import picHome2 from '../assets/picHome2.jpg'
+import picHome3 from '../assets/picHome3.jpg'
+import picHome4 from '../assets/picHome4.jpg'
+import picOurwork from '../assets/picOurwork.jpg'
+import picGraph from '../assets/picGraph.jpg'
 
 function Home() {
     return (
@@ -12,16 +18,16 @@ function Home() {
             <Container fluid className="my-5">
                 <Row className="d-flex justify-content-evenly flex-lg-nowrap">
                     <Col xs="auto">
-                        <img src="https://picsum.photos/seed/book/225/400" alt="random image 1" width="224" height="400" className="img-rounded img-top img-responsive" />
+                        <img src={picHome1} alt="random image 1" width="224" height="400" className="img-rounded img-top img-responsive" />
                     </Col>
                     <Col xs="auto">
-                        <img src="https://picsum.photos/seed/files/225/400" alt="random image 2" width="224" height="400" className="img-rounded img-bottom img-responsive" />
+                        <img src={picHome2} alt="random image 2" width="224" height="400" className="img-rounded img-bottom img-responsive" />
                     </Col>
                     <Col xs="auto" className="d-none d-sm-none d-md-block">
-                        <img src="https://picsum.photos/seed/pen/225/400" alt="random image 3" width="224" height="400" className="img-rounded img-top img-responsive" />
+                        <img src={picHome3} alt="random image 3" width="224" height="400" className="img-rounded img-top img-responsive" />
                     </Col>
                     <Col xs="auto" className="d-none d-sm-none d-md-none d-lg-block">
-                        <img src="https://picsum.photos/seed/laptop/225/400" alt="random image 4" width="225" height="400" className="img-rounded img-bottom img-responsive" />
+                        <img src={picHome4} alt="random image 4" width="225" height="400" className="img-rounded img-bottom img-responsive" />
                     </Col>
                 </Row>
             </Container>
@@ -87,9 +93,9 @@ function Home() {
                 </Row>
             </Container>
             <Container className="bg-custom p-5 mt-5 div-rounded" id="ourWork">
-                <Row>
+                <Row className="d-flex flex-md-column flex-lg-row">
                     <Col className="my-3 d-flex justify-content-center">
-                        <img src="https://picsum.photos/seed/meeting/375" alt="illustration image" width="375" height="375" className="img-rounded" />
+                        <img src={picOurwork} alt="illustration image" width="425" height="425" className="img-rounded" />
                     </Col>
                     <Col>
                         <h2>How Soap Agency creates growth business</h2>
@@ -114,7 +120,7 @@ function Home() {
                     <Card className="bg-custom mt-4 mt-xl-0" style={{ width: '28rem' }}>
                         <img src="https://picsum.photos/seed/icon5/40" alt="icon" width="40" height="40" className="img-rounded" />
                         <Card.Title className="mt-2" style={{ fontWeight: 'bold' }}>Unparalleled track record</Card.Title>
-                        <Card.Text>We have a 92% client retention rate and a client recommendation score that's 60% higher than the worldwide
+                        <Card.Text>We have a 96% client retention rate and a client recommendation score that's 60% higher than the worldwide
                             average. Our 700+ client testimonials, award-winning culture are the perfect recipe for a successful digital compaign.
                         </Card.Text>
                         <Card.Link href="#">Learn more</Card.Link>
@@ -125,14 +131,14 @@ function Home() {
                 <Row className="py-3">
                     <Col>
                         <h5>By the numbers</h5>
-                        <h4 style={{ fontSize: 120, fontWeight: 'bold' }}>92%</h4>
+                        <h4 style={{ fontSize: 120, fontWeight: 'bold' }}>96%</h4>
                         <p style={{ fontWeight: 'bold' }}>Retention rate</p>
                         <p>Your business is in good hands at Soap Agency. While the average retention rate for marketing agencies hovers around 50%,
                             over 90% of our clients stay with us over the long haul because of the results we deliver and the relationships we build.</p>
                     </Col>
-                    <Col>
+                    <Col className="d-flex flex-column justify-content-center align-items-center">
                         <p>Our best-in-class digital marketing agency impress customers with impactful results and wows them with stellar customer service.</p>
-                        <img src="https://picsum.photos/seed/chart/500/300" alt="graph" width="100%" height="auto" />
+                        <img src={picGraph} alt="graph" width="450" height="300" className="img-rounded" />
                         {/* <Row className="p-0 " style={{ height: 200 }}>
                             <Col className="p-0" style={{ witdh: 80 }}>
                                 <div className="h-64 d-inline-block chart" style={{ width: 80, backgroundColor: '#ff0000' }}>Height 25%</div>
