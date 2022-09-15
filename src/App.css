@@ -27,6 +27,7 @@ h6{
 }
 .img-rounded{
   border-radius: 25px;
+  object-fit:cover;
 }
 .img-top{
   margin-bottom: 25%;
@@ -37,6 +38,9 @@ h6{
 .footer-list{
   list-style: none;
   font-size: 0.8rem;
+}
+.footer-list>li>a{
+  text-decoration:none;
   color: rgba(211, 211, 211, 0.678);
 }
 .chart{

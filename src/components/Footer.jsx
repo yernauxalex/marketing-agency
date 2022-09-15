@@ -19,52 +19,52 @@ function Footer() {
                 <Stack direction="horizontal" gap={3} className="pt-2">
                     <h3>Soap Agency</h3>
                     <div className="ms-auto">
-                        <img src={instagramIcon} alt="logo" width="24" height="24" className="mx-2" />
-                        <img src={twitterIcon} alt="logo" width="24" height="24" className="mx-2" />
-                        <img src={youtubeIcon} alt="logo" width="24" height="24" className="mx-2" />
+                        <a href=""><img src={instagramIcon} alt="logo" width="24" height="24" className="mx-2" /></a>
+                        <a href=""><img src={twitterIcon} alt="logo" width="24" height="24" className="mx-2" /></a>
+                        <a href=""><img src={youtubeIcon} alt="logo" width="24" height="24" className="mx-2" /></a>
                     </div>
                 </Stack>
                 {width > breakpoint ? (
                     <Row fluid className="mt-2 d-flex justify-content-center">
                         <Col>
                             <ul className="pb-1 footer-list"><h6>Digital marketing</h6>
-                                <li>Overview</li>
-                                <li>Paid search</li>
-                                <li>SEO</li>
-                                <li>Email marketing</li>
-                                <li>Analytics & Reporting</li>
+                                <li><a href="">Overview</a></li>
+                                <li><a href="">Paid search</a></li>
+                                <li><a href="">SEO</a></li>
+                                <li><a href="">Email marketing</a></li>
+                                <li><a href="">Analytics & Reporting</a></li>
                             </ul>
                         </Col>
                         <Col>
                             <ul className="footer-list"><h6>Website development</h6>
-                                <li>Overview</li>
-                                <li>Front end</li>
-                                <li>CMS</li>
-                                <li>Ecommerce website</li>
-                                <li>CRM integration</li>
+                                <li><a href="">Overview</a></li>
+                                <li><a href="">Front end</a></li>
+                                <li><a href="">CMS</a></li>
+                                <li><a href="">Ecommerce website</a></li>
+                                <li><a href="">CRM integration</a></li>
                             </ul>
                         </Col>
                         <Col>
                             <ul className="footer-list"><h6>Branding</h6>
-                                <li>Overview</li>
-                                <li>Brand guidelines</li>
-                                <li>Brand identity</li>
-                                <li>Brand workshop</li>
-                                <li>Brand strategy</li>
+                                <li><a href="">Overview</a></li>
+                                <li><a href="">Brand guidelines</a></li>
+                                <li><a href="">Brand identity</a></li>
+                                <li><a href="">Brand workshop</a></li>
+                                <li><a href="">Brand strategy</a></li>
                             </ul>
                         </Col>
                         <Col>
                             <ul className="footer-list"><h6>Socmed marketing</h6>
-                                <li>Overview</li>
-                                <li>Organic social</li>
-                                <li>Paid social</li>
+                                <li><a href="">Overview</a></li>
+                                <li><a href="">Organic social</a></li>
+                                <li><a href="">Paid social</a></li>
                             </ul>
                         </Col>
                         <Col>
                             <ul className="footer-list"><h6>Creative</h6>
-                                <li>Overview</li>
-                                <li>Web, UI/UX design</li>
-                                <li>Print design</li>
+                                <li><a href="">Overview</a></li>
+                                <li><a href="">Web, UI/UX design</a></li>
+                                <li><a href="">Print design</a></li>
                             </ul>
                         </Col>
                     </Row>
@@ -100,7 +100,7 @@ function Footer() {
                     <Col>2022 Soap Agency, Inc All rights reserved</Col>
                     <Col>Cookie Policy</Col>
                     <Col>Privacy policy</Col>
-                    <Col><a href="https://www.flaticon.com/fr/auteurs/freepik" title="icônes">icônes créées par Freepik - Flaticon</a></Col>
+                    <Col><a href="https://www.flaticon.com/fr/auteurs/freepik" title="icônes" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'white' }}>icônes créées par Freepik - Flaticon</a></Col>
                 </Row>
             </Container>
 
