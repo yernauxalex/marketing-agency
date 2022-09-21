@@ -34,8 +34,8 @@ function Home() {
             <Container fluid className="px-5">
                 <h2>We are the best choice for your Digital Marketing</h2>
                 <Container className="mt-5 d-flex flex-wrap justify-content-evenly align-items-start gap-xs-3">
-                    <Card border="light" style={{ width: '16rem' }}>
-                        <img src="https://picsum.photos/seed/icon1/40" alt="icon" width="40" height="40" className="img-rounded" />
+                    <Card className="pb-3 bg-customCard" style={{ width: '16rem' }}>
+                        <p className="iconCard">📊</p>
                         <Card.Title className="mt-2" style={{ fontWeight: 'bold' }}>Earning traffic</Card.Title>
                         <Card.Text>A website without traffic is worthless. Our marketers partner with you to identify
                             your target market and get to work making your site more visible to your key market
@@ -43,8 +43,8 @@ function Home() {
                         </Card.Text>
                         <Card.Link href="#">Learn more</Card.Link>
                     </Card>
-                    <Card border="light" style={{ width: '16rem' }}>
-                        <img src="https://picsum.photos/seed/icon2/40" alt="icon" width="40" height="40" className="img-rounded" />
+                    <Card className="pb-3 bg-customCard" style={{ width: '16rem' }}>
+                        <p className="iconCard">🎨</p>
                         <Card.Title className="mt-2" style={{ fontWeight: 'bold' }}>Design that dazzles</Card.Title>
                         <Card.Text>Your business is unique and you need a website that can help separate you from the competition.
                             The Soap agency interactive team lays the creative groundwork for your digital presence with a
@@ -52,8 +52,8 @@ function Home() {
                         </Card.Text>
                         <Card.Link href="#">Learn more</Card.Link>
                     </Card>
-                    <Card border="light" style={{ width: '16rem' }}>
-                        <img src="https://picsum.photos/seed/icon3/40" alt="icon" width="40" height="40" className="img-rounded" />
+                    <Card className="pb-3 bg-customCard" style={{ width: '16rem' }}>
+                        <p className="iconCard">🚀</p>
                         <Card.Title className="mt-2" style={{ fontWeight: 'bold' }}>Expand your social reach</Card.Title>
                         <Card.Text>Connectivity and online interaction are a must for any company focused on growth. Our team of social
                             media experts can create a social media management plan that gets the right message in front of your desired audience.
@@ -100,25 +100,25 @@ function Home() {
                     <Col>
                         <h2>How Soap Agency creates growth business</h2>
                         <ul className='customList'>
-                            <li className="mb-2">Dedicated account manager for each account</li>
-                            <li className="mb-2">Clear and concise reporting platform</li>
-                            <li className="mb-2">Partner status with Google, Facebook, Bing and more</li>
-                            <li className="mb-2">On-staff experts in marketing, design, automation, and developpement</li>
+                            <li className="mb-2 ps-2">Dedicated account manager for each account</li>
+                            <li className="mb-2 ps-2">Clear and concise reporting platform</li>
+                            <li className="mb-2 ps-2">Partner status with Google, Facebook, Bing and more</li>
+                            <li className="mb-2 ps-2">On-staff experts in marketing, design, automation, and developpement</li>
                         </ul>
                         <Button variant="primary" className="mx-5">Send me a proposal 📄</Button>
                     </Col>
                 </Row>
                 <Row className="py-3 d-flex justify-content-evenly">
-                    <Card className="bg-custom mt-4 mt-xl-0" style={{ width: '28rem' }}>
-                        <img src="https://picsum.photos/seed/icon4/40" alt="icon" width="40" height="40" className="img-rounded" />
+                    <Card className="bg-custom pb-3 mt-4 mt-xl-0" style={{ width: '28rem' }}>
+                        <p className="iconCard">🏆</p>
                         <Card.Title className="mt-2" style={{ fontWeight: 'bold' }}>Proven performance</Card.Title>
                         <Card.Text>Our team of over 450 experts is one of the largest performance digital marketing agencies in the workd.
                             We've partnered with the best to bring the greatest marketing technology to our clients.
                         </Card.Text>
                         <Card.Link href="#">Learn more</Card.Link>
                     </Card>
-                    <Card className="bg-custom mt-4 mt-xl-0" style={{ width: '28rem' }}>
-                        <img src="https://picsum.photos/seed/icon5/40" alt="icon" width="40" height="40" className="img-rounded" />
+                    <Card className="bg-custom pb-3 mt-4 mt-xl-0" style={{ width: '28rem' }}>
+                        <p className="iconCard">⏱</p>
                         <Card.Title className="mt-2" style={{ fontWeight: 'bold' }}>Unparalleled track record</Card.Title>
                         <Card.Text>We have a 96% client retention rate and a client recommendation score that's 60% higher than the worldwide
                             average. Our 700+ client testimonials, award-winning culture are the perfect recipe for a successful digital compaign.
@@ -128,7 +128,7 @@ function Home() {
                 </Row>
             </Container>
             <Container className="bg-custom p-5 mt-5 div-rounded" id="WhoWeAre">
-                <Row className="py-3">
+                <Row className="py-3 d-flex flex-column flex-lg-row">
                     <Col>
                         <h5>By the numbers</h5>
                         <h4 style={{ fontSize: 120, fontWeight: 'bold' }}>96%</h4>
@@ -138,7 +138,7 @@ function Home() {
                     </Col>
                     <Col className="d-flex flex-column justify-content-center align-items-center">
                         <p>Our best-in-class digital marketing agency impress customers with impactful results and wows them with stellar customer service.</p>
-                        <img src={picGraph} alt="graph" width="450" height="300" className="img-rounded" />
+                        <img src={picGraph} alt="graph" width="100%" height="300" className="img-rounded " />
                         {/* <Row className="p-0 " style={{ height: 200 }}>
                             <Col className="p-0" style={{ witdh: 80 }}>
                                 <div className="h-64 d-inline-block chart" style={{ width: 80, backgroundColor: '#ff0000' }}>Height 25%</div>
