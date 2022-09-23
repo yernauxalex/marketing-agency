@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-import { Container, Button, Row, Col, Card } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Button, Row, Col, Card, Modal } from 'react-bootstrap';
+import ContactForm from '../components/ContactForm'
 import picHome1 from '../assets/picHome1.jpg'
 import picHome2 from '../assets/picHome2.jpg'
 import picHome3 from '../assets/picHome3.jpg'
@@ -9,6 +10,10 @@ import picOurwork from '../assets/picOurwork.jpg'
 import picGraph from '../assets/picGraph.jpg'
 
 function Home() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     return (
         <Container fluid="xl" >
             <Container fluid className="px-5">
@@ -105,7 +110,7 @@ function Home() {
                             <li className="mb-2 ps-2">Partner status with Google, Facebook, Bing and more</li>
                             <li className="mb-2 ps-2">On-staff experts in marketing, design, automation, and developpement</li>
                         </ul>
-                        <Button variant="primary" className="mx-5">Send me a proposal 📄</Button>
+                        <Button variant="primary" className="mx-5" onClick={handleShow}>Send me a proposal 📄</Button>
                     </Col>
                 </Row>
                 <Row className="py-3 d-flex justify-content-evenly">
@@ -168,7 +173,14 @@ function Home() {
                             to increase leads, phone calls, transactions, and qualified website traffic. They will do the same for you, request a free
                             strategy proposal and get a game plan for elite revenue.
                         </p>
-                        <Button variant="primary" >Send me a proposal 📄</Button>
+                        <Button variant="primary" onClick={handleShow}>Send me a proposal 📄</Button>
+                        <Modal show={show} onHide={handleClose} aria-labelledby="contact us form"
+                            centered>
+                            <Modal.Header closeButton>
+                                <Modal.Title>Contact Us</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body><ContactForm /></Modal.Body>
+                        </Modal>
                     </Col>
                 </Row>
             </Container>
