@@ -16,23 +16,26 @@ function Home() {
     const handleShow = () => setShow(true);
     return (
         <Container fluid="xl" >
-            <Container fluid className="px-5">
+            <Container fluid className="px-5 d-none d-sm-none d-md-block">
                 <h1>Choose Soap Agency as your digital marketing agency.</h1>
+            </Container>
+            <Container fluid className="px-5 d-lg-none d-md-none d-sm-block ">
+                <h1>Choose Soap Agency.</h1>
             </Container>
             <Button variant="primary" className="mx-5">Get in touch 👋</Button>
             <Container fluid className="my-5">
                 <Row className="d-flex justify-content-evenly flex-lg-nowrap">
                     <Col xs="auto">
-                        <img src={picHome1} alt="random image 1" width="224" height="400" className="img-rounded img-top img-responsive" />
+                        <img src={picHome4} alt="random image 1" width="224" height="400" className="img-rounded img-top img-responsive" />
                     </Col>
-                    <Col xs="auto">
+                    <Col xs="auto" className="d-none d-sm-block">
                         <img src={picHome2} alt="random image 2" width="224" height="400" className="img-rounded img-bottom img-responsive" />
                     </Col>
                     <Col xs="auto" className="d-none d-sm-none d-md-block">
                         <img src={picHome3} alt="random image 3" width="224" height="400" className="img-rounded img-top img-responsive" />
                     </Col>
                     <Col xs="auto" className="d-none d-sm-none d-md-none d-lg-block">
-                        <img src={picHome4} alt="random image 4" width="225" height="400" className="img-rounded img-bottom img-responsive" />
+                        <img src={picHome1} alt="random image 4" width="225" height="400" className="img-rounded img-bottom img-responsive" />
                     </Col>
                 </Row>
             </Container>
@@ -114,7 +117,7 @@ function Home() {
                     </Col>
                 </Row>
                 <Row className="py-3 d-flex justify-content-evenly">
-                    <Card className="bg-custom pb-3 mt-4 mt-xl-0" style={{ width: '28rem' }}>
+                    <Card className="bg-custom pb-3 mt-4 mt-xl-0" style={{ width: '25rem' }}>
                         <p className="iconCard">🏆</p>
                         <Card.Title className="mt-2" style={{ fontWeight: 'bold' }}>Proven performance</Card.Title>
                         <Card.Text>Our team of over 450 experts is one of the largest performance digital marketing agencies in the workd.
@@ -122,7 +125,7 @@ function Home() {
                         </Card.Text>
                         <Card.Link href="#">Learn more</Card.Link>
                     </Card>
-                    <Card className="bg-custom pb-3 mt-4 mt-xl-0" style={{ width: '28rem' }}>
+                    <Card className="bg-custom pb-3 mt-4 mt-xl-0" style={{ width: '25rem' }}>
                         <p className="iconCard">⏱</p>
                         <Card.Title className="mt-2" style={{ fontWeight: 'bold' }}>Unparalleled track record</Card.Title>
                         <Card.Text>We have a 96% client retention rate and a client recommendation score that's 60% higher than the worldwide
